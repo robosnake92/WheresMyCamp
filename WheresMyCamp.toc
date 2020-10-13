@@ -1,4 +1,4 @@
-## Interface: 80300
+## Interface: 90001
 ## Title: Where's My Camp?
 ## Notes: Keep track of where you parked your Vulpera camp
 ## Version: 1.0.0
