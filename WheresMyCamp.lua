@@ -20,11 +20,7 @@ local displayLocation = function(tooltip)
 end
 
 --hook into the tooltips
-if GameTooltip:GetScript("OnTooltipSetSpell") then
-	GameTooltip:HookScript("OnTooltipSetSpell", displayLocation)
-else
-	GameTooltip:SetScript("OnTooltipSetSpell", displayLocation)
-end 
+TooltipDataProcessor.AddTooltipPostCall(Enum.TooltipDataType.Spell, displayLocation)
 
 --handle the events
 local function eventHandler(self, event, ...)
